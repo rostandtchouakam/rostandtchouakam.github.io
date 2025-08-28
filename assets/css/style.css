@@ -114,3 +114,40 @@ hr{ border:none; border-top:1px solid var(--line); margin: 18px 0; }
   .grid{ grid-template-columns: 1fr; }
   .profile{ max-width: 220px; }
 }
+/* ===== Mobile polish: header + social ===== */
+
+/* Stack header blocks on small screens and prevent overlap */
+@media (max-width: 700px){
+  .top-inner{
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 10px;
+  }
+
+  /* Social row goes first, wraps nicely */
+  .social{
+    order: 1;
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Nav goes under social, left-aligned and wrapping */
+  .nav{
+    order: 2;
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Extra-small screens: switch social to icons-only to save space */
+@media (max-width: 480px){
+  .social a span{ display: none; }     /* keep icons, hide labels */
+  .social svg{ width:16px; height:16px; }
+  .language-switcher select{ width: 100%; }  /* dropdown easier to tap */
+  .hero{ padding: 40px 0; }
+  .grid{ gap: 18px; }
+}
