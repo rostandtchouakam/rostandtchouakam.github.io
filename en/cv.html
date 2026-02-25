@@ -4,56 +4,158 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rostand Tchouakam | CV</title>
+  <meta name="description" content="Curriculum Vitae of Rostand Tchouakam — Education, experience, and awards." />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  
-    <div class="site-top">
-      <div class="container top-inner">
-        <div class="brand">Rostand Tchouakam</div>
-        <nav class="nav"><a href="index.html">Home</a> · <a href="cv.html">CV</a> · <a href="papers.html">Papers</a> · <a href="code.html">Code</a> · <a href="teaching.html">Teaching</a> · <span class="language-switcher"><label for="lang-select">Language: </label><select id="lang-select" onchange="location.href=this.value;"><option value="../en/cv.html" selected>English</option><option value="../fr/cv.html">Français</option><option value="../de/cv.html">Deutsch</option></select></span></nav>
+
+  <nav class="site-nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="papers.html">Papers</a>
+        <a href="code.html">Code</a>
+        <a href="teaching.html">Teaching</a>
+        <span class="lang-switch">
+          <label for="lang-select">Language</label>
+          <select id="lang-select" onchange="location.href=this.value;">
+            <option value="../en/cv.html" selected>English</option>
+            <option value="../fr/cv.html">Français</option>
+            <option value="../de/cv.html">Deutsch</option>
+          </select>
+        </span>
       </div>
     </div>
-    
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">Rostand Tchouakam</h1>
-        <div class="bar"></div>
-      </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Curriculum Vitae</h1>
+      <p class="page-hero-subtitle">Education, experience, and achievements</p>
+      <div class="gold-bar"></div>
     </div>
-    
+  </section>
 
-<main class="page">
-  <div class="container">
-    <h1>CV</h1>
-    <p>Download the full PDF: <a href="../assets/Rostand_CV.pdf" download>CV (PDF)</a></p>
-    <hr />
-    <h2>Education</h2>
-    <ul class="list">
-      <li><strong>PhD (candidate), Economics</strong> — Université de Montréal (UdeM), Canada, 2022–</li>
-      <li><strong>MSc, Statistics & Economics (ISE)</strong> — Sub-regional Institute for Statistics and Applied Economics, Cameroon, 2018–2021</li>
-      <li><strong>MSc (1st year), Mathematics (Geometry)</strong> — University of Yaoundé I, Cameroon, 2017–2018</li>
-      <li><strong>BSc, Mathematics</strong> — University of Yaoundé I, Cameroon, 2014–2017</li>
-    </ul>
-    <h2>Experience</h2>
-    <ul class="list">
-      <li><strong>Economist (STC)</strong>, World Bank Group, Sep 2021–Present</li>
-      <li><strong>PhD Research Intern</strong>, AI Innovation Centre (SKEMA Canada), Aug 2023–Dec 2024</li>
-    </ul>
-    <h2>Awards</h2>
-    <ul class="list">
-      <li>Fonds de Recherche du Québec Science et Culture (FRQSC) Fellowship , 2025–2028</li>
-      <li>Mitacs Accelerate Grant, 2024</li>
-      <li>NSERC–CREATE Fin-ML Training Grant, 2023</li>
-    </ul>
-  </div>
-</main>
+  <main>
+    <div class="container">
 
+      <section class="section fade-in">
+        <a href="../assets/Rostand_CV.pdf" download class="download-btn">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Full CV (PDF)
+        </a>
+      </section>
 
-        <footer>
-          <div class="container">
-            <p>Rostand, Tchouakam | Email: <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">Education</p>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+        <div class="timeline stagger">
+          <div class="timeline-item">
+            <span class="timeline-period">2022 &ndash; Present</span>
+            <h3 class="timeline-title">PhD (candidate), Economics</h3>
+            <p class="timeline-org">Université de Montréal (UdeM), Canada</p>
           </div>
-        </footer>
+          <div class="timeline-item">
+            <span class="timeline-period">2018 &ndash; 2021</span>
+            <h3 class="timeline-title">MSc, Statistics &amp; Economics (ISE)</h3>
+            <p class="timeline-org">Sub-regional Institute for Statistics and Applied Economics (ISSEA), Cameroon</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2017 &ndash; 2018</span>
+            <h3 class="timeline-title">MSc (1st year), Mathematics (Geometry)</h3>
+            <p class="timeline-org">University of Yaoundé I, Cameroon</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">2014 &ndash; 2017</span>
+            <h3 class="timeline-title">BSc, Mathematics</h3>
+            <p class="timeline-org">University of Yaoundé I, Cameroon</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">Experience</p>
+          <h2 class="section-title">Professional Background</h2>
+        </div>
+        <div class="timeline stagger">
+          <div class="timeline-item">
+            <span class="timeline-period">Sep 2021 &ndash; Present</span>
+            <h3 class="timeline-title">Economist (STC)</h3>
+            <p class="timeline-org">World Bank Group</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-period">Aug 2023 &ndash; Dec 2024</span>
+            <h3 class="timeline-title">PhD Research Intern</h3>
+            <p class="timeline-org">AI Innovation Centre, SKEMA Canada</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">Awards</p>
+          <h2 class="section-title">Grants &amp; Fellowships</h2>
+        </div>
+        <div class="awards-grid stagger">
+          <div class="award-card">
+            <span class="award-year">2025 &ndash; 2028</span>
+            <h4>FRQSC Fellowship</h4>
+            <p>Fonds de Recherche du Québec &mdash; Société et Culture</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">2024</span>
+            <h4>Mitacs Accelerate Grant</h4>
+            <p>Research internship funding for industry-academic collaboration</p>
+          </div>
+          <div class="award-card">
+            <span class="award-year">2023</span>
+            <h4>NSERC&ndash;CREATE Fin-ML Training Grant</h4>
+            <p>Financial machine learning training program</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Rostand Tchouakam</div>
+          <p class="footer-desc">PhD Candidate in Economics at Université de Montréal. Exploring the intersection of financial econometrics and machine learning.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
+            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Rostand Tchouakam. All rights reserved.</span>
+        <span>Université de Montréal &middot; CIREQ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
+    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
+    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
+  </script>
+
 </body>
 </html>
