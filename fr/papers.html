@@ -7,39 +7,97 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  
-    <div class="site-top">
-      <div class="container top-inner">
-        <div class="brand">Rostand Tchouakam</div>
-        <nav class="nav"><a href="index.html">Accueil</a> · <a href="cv.html">CV</a> · <a href="papers.html">Publications</a> · <a href="code.html">Code</a> · <a href="teaching.html">Enseignement</a> · <span class="language-switcher"><label for="lang-select">Langue: </label><select id="lang-select" onchange="location.href=this.value;"><option value="../en/papers.html">English</option><option value="../fr/papers.html" selected>Français</option><option value="../de/papers.html">Deutsch</option></select></span></nav>
+
+  <nav class="site-nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="papers.html" class="active">Publications</a>
+        <a href="code.html">Code</a>
+        <a href="teaching.html">Enseignement</a>
+        <span class="lang-switch">
+          <label for="lang-select">Langue</label>
+          <select id="lang-select" onchange="location.href=this.value;">
+            <option value="../en/papers.html">English</option>
+            <option value="../fr/papers.html" selected>Français</option>
+            <option value="../de/papers.html">Deutsch</option>
+          </select>
+        </span>
       </div>
     </div>
-    
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">Rostand Tchouakam</h1>
-        <div class="bar"></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Travaux de recherche</h1>
+      <p class="page-hero-subtitle">Documents de travail et publications</p>
+      <div class="gold-bar"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">En cours</p>
+          <h2 class="section-title">Documents de travail</h2>
+        </div>
+        <div class="paper-card">
+          <span class="paper-tag">Document de travail</span>
+          <h3>Solving Consumption&ndash;Investment Models with Theory-Informed Neural Networks (TINNs)</h3>
+          <p>Intégrer la structure économique dans l'apprentissage profond pour résoudre des programmes dynamiques de haute dimension. Cet article explore comment des architectures de réseaux neuronaux informées par la théorie peuvent exploiter des propriétés économiques connues &mdash; telles que la concavité, l'homogénéité et les conditions aux limites &mdash; pour résoudre efficacement des problèmes de consommation&ndash;investissement insolubles par les méthodes numériques traditionnelles.</p>
+        </div>
+      </section>
+
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">Publiés</p>
+          <h2 class="section-title">Publications</h2>
+        </div>
+        <div class="paper-placeholder">
+          Les publications et articles à paraître apparaîtront ici.
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Rostand Tchouakam</div>
+          <p class="footer-desc">Doctorant en économie à l'Université de Montréal. À l'intersection de l'économétrie financière et de l'apprentissage automatique.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-links">
+            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
+            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Rostand Tchouakam. Tous droits réservés.</span>
+        <span>Université de Montréal &middot; CIREQ</span>
       </div>
     </div>
-    
+  </footer>
 
-<main class="page">
-  <div class="container">
-    <h1>Travaux de recherche</h1>
-    <h2 id="tinns">Documents de travail</h2>
-    <ul class="list">
-      <li><strong>Solving Consumption–Investment Models with Theory-Informed Neural Networks (TINNs)</strong> — intégrer la structure économique dans l’apprentissage profond pour résoudre des programmes dynamiques de haute dimension.</li>
-    </ul>
-    <h2>Publications</h2>
-    <p>(Ajouter ici les éléments publiés ou à paraître avec des liens.)</p>
-  </div>
-</main>
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
+    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
+    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
+  </script>
 
-
-        <footer>
-          <div class="container">
-            <p>Rostand, Tchouakam | Email: <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
-          </div>
-        </footer>
 </body>
 </html>

@@ -7,44 +7,132 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  
-    <div class="site-top">
-      <div class="container top-inner">
-        <div class="brand">Rostand Tchouakam</div>
-        <nav class="nav"><a href="index.html">Startseite</a> · <a href="cv.html">Lebenslauf</a> · <a href="papers.html">Publikationen</a> · <a href="code.html">Code</a> · <a href="teaching.html">Lehre</a> · <span class="language-switcher"><label for="lang-select">Sprache: </label><select id="lang-select" onchange="location.href=this.value;"><option value="../en/teaching.html">English</option><option value="../fr/teaching.html">Français</option><option value="../de/teaching.html" selected>Deutsch</option></select></span></nav>
+
+  <nav class="site-nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Startseite</a>
+        <a href="cv.html">Lebenslauf</a>
+        <a href="papers.html">Publikationen</a>
+        <a href="code.html">Code</a>
+        <a href="teaching.html" class="active">Lehre</a>
+        <span class="lang-switch">
+          <label for="lang-select">Sprache</label>
+          <select id="lang-select" onchange="location.href=this.value;">
+            <option value="../en/teaching.html">English</option>
+            <option value="../fr/teaching.html">Français</option>
+            <option value="../de/teaching.html" selected>Deutsch</option>
+          </select>
+        </span>
       </div>
     </div>
-    
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">Rostand Tchouakam</h1>
-        <div class="bar"></div>
-      </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Lehre</h1>
+      <p class="page-hero-subtitle">Kurse und Lehrerfahrung</p>
+      <div class="gold-bar"></div>
     </div>
-    
+  </section>
 
-<main class="page">
-  <div class="container">
-    <h1>Lehre</h1>
-    <h2>Dozent</h2>
-    <ul class="list">
-      <li>Mathematische Methoden für die Wirtschaftswissenschaften (UdeM) — Herbst 2024–</li>
-    </ul>
-    <h2>Lehrassistent</h2>
-    <ul class="list">
-      <li>Fortgeschrittene Mikroökonomie (PhD) — Winter 2024–2025</li>
-      <li>Geld und Bankwesen (Master) — Herbst 2024–2025</li>
-      <li>Einführung in die Volkswirtschaftslehre (Bachelor, online) — 2023</li>
-      <li>Mathematische Methoden für die Wirtschaftswissenschaften — mehrere Semester</li>
-    </ul>
-  </div>
-</main>
+  <main>
+    <div class="container">
 
-
-        <footer>
-          <div class="container">
-            <p>Rostand, Tchouakam | Email: <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <section class="section fade-in">
+        <div class="teaching-category">
+          <div class="section-header">
+            <p class="section-label">Dozent</p>
+            <h2 class="section-title">Gehaltene Kurse</h2>
           </div>
-        </footer>
+          <div class="teaching-list stagger">
+            <div class="teaching-item">
+              <div class="teaching-dot"></div>
+              <div class="teaching-info">
+                <h4>Mathematische Methoden für die Wirtschaftswissenschaften</h4>
+                <p>Université de Montréal &mdash; Herbst 2024 &ndash; Heute</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in">
+        <div class="teaching-category">
+          <div class="section-header">
+            <p class="section-label">Lehrassistent</p>
+            <h2 class="section-title">Assistenzstellen</h2>
+          </div>
+          <div class="teaching-list stagger">
+            <div class="teaching-item">
+              <div class="teaching-dot"></div>
+              <div class="teaching-info">
+                <h4>Fortgeschrittene Mikroökonomie (PhD)</h4>
+                <p>Université de Montréal &mdash; Winter 2024&ndash;2025</p>
+              </div>
+            </div>
+            <div class="teaching-item">
+              <div class="teaching-dot"></div>
+              <div class="teaching-info">
+                <h4>Geld und Bankwesen (Master)</h4>
+                <p>Université de Montréal &mdash; Herbst 2024&ndash;2025</p>
+              </div>
+            </div>
+            <div class="teaching-item">
+              <div class="teaching-dot"></div>
+              <div class="teaching-info">
+                <h4>Einführung in die Volkswirtschaftslehre (Bachelor, online)</h4>
+                <p>Université de Montréal &mdash; 2023</p>
+              </div>
+            </div>
+            <div class="teaching-item">
+              <div class="teaching-dot"></div>
+              <div class="teaching-info">
+                <h4>Mathematische Methoden für die Wirtschaftswissenschaften</h4>
+                <p>Université de Montréal &mdash; Mehrere Semester</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Rostand Tchouakam</div>
+          <p class="footer-desc">Doktorand der Volkswirtschaftslehre an der Université de Montréal. An der Schnittstelle von Finanzökonometrie und maschinellem Lernen.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Kontakt</p>
+          <ul class="footer-links">
+            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
+            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Rostand Tchouakam. Alle Rechte vorbehalten.</span>
+        <span>Université de Montréal &middot; CIREQ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
+    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
+    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
+  </script>
+
 </body>
 </html>

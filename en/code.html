@@ -4,42 +4,113 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rostand Tchouakam | Code</title>
+  <meta name="description" content="Open-source code and projects by Rostand Tchouakam." />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  
-    <div class="site-top">
-      <div class="container top-inner">
-        <div class="brand">Rostand Tchouakam</div>
-        <nav class="nav"><a href="index.html">Home</a> · <a href="cv.html">CV</a> · <a href="papers.html">Papers</a> · <a href="code.html">Code</a> · <a href="teaching.html">Teaching</a> · <span class="language-switcher"><label for="lang-select">Language: </label><select id="lang-select" onchange="location.href=this.value;"><option value="../en/code.html" selected>English</option><option value="../fr/code.html">Français</option><option value="../de/code.html">Deutsch</option></select></span></nav>
+
+  <nav class="site-nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="papers.html">Papers</a>
+        <a href="code.html" class="active">Code</a>
+        <a href="teaching.html">Teaching</a>
+        <span class="lang-switch">
+          <label for="lang-select">Language</label>
+          <select id="lang-select" onchange="location.href=this.value;">
+            <option value="../en/code.html" selected>English</option>
+            <option value="../fr/code.html">Français</option>
+            <option value="../de/code.html">Deutsch</option>
+          </select>
+        </span>
       </div>
     </div>
-    
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">Rostand Tchouakam</h1>
-        <div class="bar"></div>
-      </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Code &amp; Projects</h1>
+      <p class="page-hero-subtitle">Open-source tools and research software</p>
+      <div class="gold-bar"></div>
     </div>
-    
+  </section>
 
-<main class="page">
-  <div class="container">
-    <h1>Code</h1>
-    <ul class="list">
-      <li><a href="#">Portfolio Choice with Deep RL</a> — reinforcement learning for portfolio allocation.</li>
-      <li><a href="#">PMD Pipelines</a> — welfare aggregates, HIES/HFPS harmonization.</li>
-      <li><a href="#">Econometrica Learnia Utilities</a> — econometrics teaching helpers.</li>
-    </ul>
-    <p class="small">Replace '#' with your GitHub repository links.</p>
-  </div>
-</main>
+  <main>
+    <div class="container">
 
-
-        <footer>
-          <div class="container">
-            <p>Rostand, Tchouakam | Email: <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <section class="section fade-in">
+        <div class="section-header">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">A selection of research code and tools connecting quantitative methods with practical applications.</p>
+        </div>
+        <div class="project-grid stagger">
+          <div class="project-card">
+            <div class="project-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Portfolio Choice with Deep RL</h3>
+            <p>Reinforcement learning for portfolio allocation. Using deep RL agents to find optimal investment strategies in continuous-time settings.</p>
+            <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
-        </footer>
+          <div class="project-card">
+            <div class="project-card-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>PMD Pipelines</h3>
+            <p>Data processing pipelines for welfare aggregates, HIES/HFPS harmonization. Tools for standardized poverty measurement data.</p>
+            <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="project-card">
+            <div class="project-card-icon">
+              <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3>Econometrica Learnia Utilities</h3>
+            <p>Teaching helpers and utilities for econometrics education. Companion tools for the Econometrica Learnia YouTube channel.</p>
+            <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Rostand Tchouakam</div>
+          <p class="footer-desc">PhD Candidate in Economics at Université de Montréal. Exploring the intersection of financial econometrics and machine learning.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
+            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Rostand Tchouakam. All rights reserved.</span>
+        <span>Université de Montréal &middot; CIREQ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
+    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
+    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
+  </script>
+
 </body>
 </html>
