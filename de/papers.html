@@ -8,96 +8,50 @@
 </head>
 <body>
 
-  <nav class="site-nav" id="navbar">
-    <div class="container nav-inner">
+  <nav>
+    <div class="wrap nav-inner">
       <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <div class="nav-links" id="nav-links">
+      <div class="nav-links">
         <a href="index.html">Startseite</a>
         <a href="cv.html">Lebenslauf</a>
         <a href="papers.html" class="active">Publikationen</a>
         <a href="code.html">Code</a>
         <a href="teaching.html">Lehre</a>
-        <span class="lang-switch">
-          <label for="lang-select">Sprache</label>
-          <select id="lang-select" onchange="location.href=this.value;">
-            <option value="../en/papers.html">English</option>
-            <option value="../fr/papers.html">Français</option>
-            <option value="../de/papers.html" selected>Deutsch</option>
-          </select>
-        </span>
+        <select class="lang-select" onchange="location.href=this.value;">
+          <option value="../en/papers.html">EN</option>
+          <option value="../fr/papers.html">FR</option>
+          <option value="../de/papers.html" selected>DE</option>
+        </select>
       </div>
     </div>
   </nav>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Forschungsarbeiten</h1>
-      <p class="page-hero-subtitle">Arbeitspapiere und Veröffentlichungen</p>
-      <div class="gold-bar"></div>
-    </div>
-  </section>
-
   <main>
-    <div class="container">
+    <div class="wrap">
+      <div class="page-header">
+        <h1>Forschungsarbeiten</h1>
+      </div>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">In Arbeit</p>
-          <h2 class="section-title">Arbeitspapiere</h2>
-        </div>
-        <div class="paper-card">
-          <span class="paper-tag">Arbeitspapier</span>
-          <h3>Solving Consumption&ndash;Investment Models with Theory-Informed Neural Networks (TINNs)</h3>
-          <p>Einbindung ökonomischer Strukturen in Deep Learning zur Lösung hochdimensionaler dynamischer Programme. Dieser Beitrag untersucht, wie theoriegestützte Architekturen neuronaler Netze bekannte ökonomische Eigenschaften &mdash; wie Konkavität, Homogenität und Randbedingungen &mdash; nutzen können, um Konsum-Investitions-Probleme effizient zu lösen, die mit traditionellen numerischen Methoden unlösbar sind.</p>
-        </div>
-      </section>
+      <h2>Arbeitspapiere</h2>
+      <ul>
+        <li><strong>Solving Consumption&ndash;Investment Models with Theory-Informed Neural Networks (TINNs)</strong> &mdash; Einbindung ökonomischer Strukturen in Deep Learning zur Lösung hochdimensionaler dynamischer Programme.</li>
+      </ul>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Veröffentlicht</p>
-          <h2 class="section-title">Veröffentlichungen</h2>
-        </div>
-        <div class="paper-placeholder">
-          Veröffentlichungen und demnächst erscheinende Artikel werden hier angezeigt.
-        </div>
-      </section>
-
+      <h2>Veröffentlichungen</h2>
+      <p style="color: var(--text-light); font-style: italic;">Veröffentlichungen und demnächst erscheinende Artikel werden hier angezeigt.</p>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <div class="footer-brand">Rostand Tchouakam</div>
-          <p class="footer-desc">Doktorand der Volkswirtschaftslehre an der Université de Montréal. An der Schnittstelle von Finanzökonometrie und maschinellem Lernen.</p>
-        </div>
-        <div>
-          <p class="footer-heading">Kontakt</p>
-          <ul class="footer-links">
-            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
-            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Rostand Tchouakam. Alle Rechte vorbehalten.</span>
-        <span>Université de Montréal &middot; CIREQ</span>
-      </div>
+  <footer>
+    <div class="wrap">
+      <p>Rostand Tchouakam &mdash; <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
     </div>
   </footer>
-
-  <script>
-    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
-    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
-    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
-    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
-  </script>
 
 </body>
 </html>
