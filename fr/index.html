@@ -3,166 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rostand Tchouakam | Doctorant en économie</title>
-  <meta name="description" content="Rostand Tchouakam — Doctorant en économie à l'Université de Montréal. Recherche en économétrie financière, apprentissage automatique et finance quantitative." />
+  <title>Rostand Tchouakam</title>
+  <meta name="description" content="Rostand Tchouakam — Doctorant en économie à l'Université de Montréal. Recherche en économétrie financière et apprentissage automatique." />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
 
-  <nav class="site-nav" id="navbar">
-    <div class="container nav-inner">
+  <nav>
+    <div class="wrap nav-inner">
       <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <div class="nav-links" id="nav-links">
+      <div class="nav-links">
         <a href="index.html" class="active">Accueil</a>
         <a href="cv.html">CV</a>
         <a href="papers.html">Publications</a>
         <a href="code.html">Code</a>
         <a href="teaching.html">Enseignement</a>
-        <span class="lang-switch">
-          <label for="lang-select">Langue</label>
-          <select id="lang-select" onchange="location.href=this.value;">
-            <option value="../en/index.html">English</option>
-            <option value="../fr/index.html" selected>Français</option>
-            <option value="../de/index.html">Deutsch</option>
-          </select>
-        </span>
+        <select class="lang-select" onchange="location.href=this.value;">
+          <option value="../en/index.html">EN</option>
+          <option value="../fr/index.html" selected>FR</option>
+          <option value="../de/index.html">DE</option>
+        </select>
       </div>
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-decoration"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Rostand Tchouakam</h1>
-        <p class="hero-subtitle">Doctorant en économie &mdash; Université de Montréal</p>
-        <p class="hero-desc">Membre du CIREQ. J'étudie comment les investisseurs prennent des décisions optimales en matière de consommation et de choix de portefeuille dans un contexte d'incertitude, en utilisant l'apprentissage automatique pour résoudre des problèmes de haute dimension en économétrie financière.</p>
-        <div class="hero-links">
-          <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca" class="btn-primary">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-            Me contacter
-          </a>
-          <a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener" class="btn-outline">
-            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v16h-4V8zm8 0h3.8v2.2h.05c.53-1 1.82-2.2 3.75-2.2 4.01 0 4.75 2.64 4.75 6.07V24h-4v-7.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.76 1.87-2.76 3.8V24h-4V8z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener" class="btn-outline">
-            <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.11.79-.25.79-.56v-2.02c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.77 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.56-.29-5.26-1.28-5.26-5.68 0-1.25.45-2.27 1.2-3.07-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.17a11.1 11.1 0 0 1 5.82 0c2.22-1.48 3.2-1.17 3.2-1.17.63 1.59.23 2.76.11 3.05.75.8 1.2 1.82 1.2 3.07 0 4.41-2.7 5.39-5.28 5.67.42.37.79 1.1.79 2.22v3.29c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-            GitHub
-          </a>
-          <a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener" class="btn-outline">
-            <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .6 5.8 3 3 0 0 0 2.1 2.1C4.6 20.5 12 20.5 12 20.5s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.7 31.7 0 0 0 .6-5.8 31.7 31.7 0 0 0-.6-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
-            YouTube
-          </a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="../assets/images/profile.jpg" alt="Portrait de Rostand Tchouakam" />
-      </div>
-    </div>
-  </section>
-
   <main>
-    <div class="container">
+    <div class="wrap">
+      <div class="home-grid">
+        <div>
+          <div class="page-header">
+            <h1>Rostand Tchouakam</h1>
+            <p>Doctorant en économie, <a href="https://www.umontreal.ca" target="_blank" rel="noopener">Université de Montréal</a><br>
+            Membre du <a href="https://www.cireqmontreal.com" target="_blank" rel="noopener">CIREQ</a></p>
+          </div>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Ce que je fais</p>
-          <h2 class="section-title">Intérêts de recherche</h2>
-          <p class="section-desc">Relier la théorie économique aux méthodes computationnelles pour résoudre des problèmes financiers concrets.</p>
-        </div>
-        <div class="about-grid stagger">
-          <div class="about-card">
-            <div class="about-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            </div>
-            <h3>Économétrie financière</h3>
-            <p>Décisions optimales de consommation et de portefeuille en temps continu sous incertitude, résolution d'équations de Hamilton&ndash;Jacobi&ndash;Bellman de haute dimension par apprentissage automatique.</p>
-          </div>
-          <div class="about-card">
-            <div class="about-card-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            </div>
-            <h3>Apprentissage automatique &amp; profond</h3>
-            <p>Substituts d'apprentissage profond pour améliorer l'inférence économétrique, notamment dans les cadres de la méthode généralisée des moments et des M-estimateurs.</p>
-          </div>
-          <div class="about-card">
-            <div class="about-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            </div>
-            <h3>Théorie et pratique</h3>
-            <p>Intégrer la structure économique dans les réseaux neuronaux pour résoudre des problèmes de programmation dynamique, reliant la théorie rigoureuse au calcul pratique.</p>
-          </div>
-          <div class="about-card">
-            <div class="about-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Partage de connaissances</h3>
-            <p>Passionné par la vulgarisation de la finance quantitative et de l'économétrie à travers l'enseignement et la chaîne YouTube Econometrica Learnia.</p>
-          </div>
-        </div>
-      </section>
+          <p>Mes intérêts de recherche portent sur l'économétrie financière et l'application des techniques d'apprentissage automatique en économie et en finance.</p>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Mises à jour</p>
-          <h2 class="section-title">Actualités &amp; à venir</h2>
-        </div>
-        <div class="news-list stagger">
-          <div class="news-item">
-            <div class="news-badge">Aut.<br>2025</div>
-            <div class="news-content">
-              <h4>Assistant d'enseignement &mdash; Sujets spéciaux en monnaie, banques et marchés</h4>
-              <p>Auxiliaire pour <a href="https://admission.umontreal.ca/cours-et-horaires/cours/ecn-6258/" target="_blank" rel="noopener noreferrer">ECN 6258 (M.Sc.)</a> à l'Université de Montréal, avec le professeur <a href="https://www.alainphilippefortin.com/home" target="_blank" rel="noopener noreferrer">Alain-Philippe Fortin</a>.</p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-badge">Août<br>2025</div>
-            <div class="news-content">
-              <h4>École d'été sur le ML en économie &amp; finance</h4>
-              <p>Participation à <a href="https://sites.google.com/carloalberto.org/thesummerschool2025unito/home" target="_blank" rel="noopener noreferrer">l'école d'été et conférence sur l'apprentissage automatique appliqué à l'économie et à la finance</a> à l'Université de Turin, Italie. Supports de cours disponibles <a href="https://github.com/sischei/SummerSchool_DL_Turin_2025" target="_blank" rel="noopener noreferrer">ici</a>.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <p>J'étudie comment les investisseurs prennent des décisions optimales en matière de consommation et de choix de portefeuille dans un contexte d'incertitude, en utilisant des méthodes d'apprentissage automatique pour résoudre des équations de Hamilton&ndash;Jacobi&ndash;Bellman de haute dimension. Je m'intéresse également à la manière dont l'apprentissage profond peut améliorer l'inférence économétrique, en particulier dans les cadres de la méthode généralisée des moments et des M-estimateurs.</p>
 
+          <p>Avant mon doctorat, j'ai obtenu un diplôme d'ingénieur statisticien économiste (MSc en économie et statistiques) de l'ISSEA, qui m'a permis d'acquérir de solides compétences quantitatives pour travailler avec différents types de données.</p>
+
+          <p>Courriel : <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+        </div>
+        <div class="profile-col">
+          <img class="profile-img" src="../assets/images/profile.jpg" alt="Rostand Tchouakam" />
+        </div>
+      </div>
+
+      <h2>À venir</h2>
+      <ul>
+        <li>À l'automne 2025, je serai assistant d'enseignement pour le cours <a href="https://admission.umontreal.ca/cours-et-horaires/cours/ecn-6258/" target="_blank" rel="noopener noreferrer">Sujets spéciaux en monnaie, banques et marchés (ECN 6258), M.Sc.</a> à l'Université de Montréal &mdash; avec le professeur <a href="https://www.alainphilippefortin.com/home" target="_blank" rel="noopener noreferrer">Alain-Philippe Fortin</a>.</li>
+      </ul>
+
+      <h2>Actualités</h2>
+      <ul>
+        <li>J'ai participé à <a href="https://sites.google.com/carloalberto.org/thesummerschool2025unito/home" target="_blank" rel="noopener noreferrer">l'école d'été et conférence sur l'apprentissage automatique appliqué à l'économie et à la finance</a> à l'Université de Turin, en Italie (août 2025). Les supports de cours sont disponibles <a href="https://github.com/sischei/SummerSchool_DL_Turin_2025" target="_blank" rel="noopener noreferrer">ici</a>.</li>
+      </ul>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <div class="footer-brand">Rostand Tchouakam</div>
-          <p class="footer-desc">Doctorant en économie à l'Université de Montréal. À l'intersection de l'économétrie financière et de l'apprentissage automatique.</p>
-        </div>
-        <div>
-          <p class="footer-heading">Contact</p>
-          <ul class="footer-links">
-            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
-            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener">Econometrica Learnia</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Rostand Tchouakam. Tous droits réservés.</span>
-        <span>Université de Montréal &middot; CIREQ</span>
-      </div>
+  <footer>
+    <div class="wrap">
+      <p>Rostand Tchouakam &mdash; <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
     </div>
   </footer>
-
-  <script>
-    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
-    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
-    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
-    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
-  </script>
 
 </body>
 </html>

@@ -8,153 +8,66 @@
 </head>
 <body>
 
-  <nav class="site-nav" id="navbar">
-    <div class="container nav-inner">
+  <nav>
+    <div class="wrap nav-inner">
       <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <div class="nav-links" id="nav-links">
+      <div class="nav-links">
         <a href="index.html">Startseite</a>
         <a href="cv.html" class="active">Lebenslauf</a>
         <a href="papers.html">Publikationen</a>
         <a href="code.html">Code</a>
         <a href="teaching.html">Lehre</a>
-        <span class="lang-switch">
-          <label for="lang-select">Sprache</label>
-          <select id="lang-select" onchange="location.href=this.value;">
-            <option value="../en/cv.html">English</option>
-            <option value="../fr/cv.html">Français</option>
-            <option value="../de/cv.html" selected>Deutsch</option>
-          </select>
-        </span>
+        <select class="lang-select" onchange="location.href=this.value;">
+          <option value="../en/cv.html">EN</option>
+          <option value="../fr/cv.html">FR</option>
+          <option value="../de/cv.html" selected>DE</option>
+        </select>
       </div>
     </div>
   </nav>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Lebenslauf</h1>
-      <p class="page-hero-subtitle">Ausbildung, Erfahrung und Auszeichnungen</p>
-      <div class="gold-bar"></div>
-    </div>
-  </section>
-
   <main>
-    <div class="container">
+    <div class="wrap">
+      <div class="page-header">
+        <h1>Lebenslauf</h1>
+        <p>Vollständiges PDF herunterladen: <a href="../assets/Rostand_CV.pdf" download>Lebenslauf (PDF)</a></p>
+      </div>
 
-      <section class="section fade-in">
-        <a href="../assets/Rostand_CV.pdf" download class="download-btn">
-          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Vollständigen Lebenslauf herunterladen (PDF)
-        </a>
-      </section>
+      <hr>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Ausbildung</p>
-          <h2 class="section-title">Akademischer Werdegang</h2>
-        </div>
-        <div class="timeline stagger">
-          <div class="timeline-item">
-            <span class="timeline-period">2022 &ndash; Heute</span>
-            <h3 class="timeline-title">Ph.D.-Studium in VWL (laufend)</h3>
-            <p class="timeline-org">Université de Montréal (UdeM), Kanada</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2018 &ndash; 2021</span>
-            <h3 class="timeline-title">M.Sc. Statistik &amp; Volkswirtschaftslehre (ISE)</h3>
-            <p class="timeline-org">ISSEA, Kamerun</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2017 &ndash; 2018</span>
-            <h3 class="timeline-title">M.Sc. (1. Jahr) Mathematik (Geometrie)</h3>
-            <p class="timeline-org">Universität Yaoundé I, Kamerun</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2014 &ndash; 2017</span>
-            <h3 class="timeline-title">B.Sc. Mathematik</h3>
-            <p class="timeline-org">Universität Yaoundé I, Kamerun</p>
-          </div>
-        </div>
-      </section>
+      <h2>Ausbildung</h2>
+      <ul>
+        <li><strong>Ph.D.-Studium in VWL (laufend)</strong> &mdash; Université de Montréal (UdeM), Kanada, 2022&ndash;</li>
+        <li><strong>M.Sc. Statistik &amp; Volkswirtschaftslehre (ISE)</strong> &mdash; ISSEA, Kamerun, 2018&ndash;2021</li>
+        <li><strong>M.Sc. (1. Jahr) Mathematik (Geometrie)</strong> &mdash; Universität Yaoundé I, Kamerun, 2017&ndash;2018</li>
+        <li><strong>B.Sc. Mathematik</strong> &mdash; Universität Yaoundé I, Kamerun, 2014&ndash;2017</li>
+      </ul>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Erfahrung</p>
-          <h2 class="section-title">Berufserfahrung</h2>
-        </div>
-        <div class="timeline stagger">
-          <div class="timeline-item">
-            <span class="timeline-period">Sept. 2021 &ndash; Heute</span>
-            <h3 class="timeline-title">Ökonom (STC)</h3>
-            <p class="timeline-org">Weltbankgruppe</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">Aug. 2023 &ndash; Dez. 2024</span>
-            <h3 class="timeline-title">PhD-Forschungspraktikant</h3>
-            <p class="timeline-org">AI Innovation Centre, SKEMA Kanada</p>
-          </div>
-        </div>
-      </section>
+      <h2>Berufserfahrung</h2>
+      <ul>
+        <li><strong>Ökonom (STC)</strong>, Weltbankgruppe, Sept. 2021&ndash;Heute</li>
+        <li><strong>PhD-Forschungspraktikant</strong>, AI Innovation Centre (SKEMA Kanada), Aug. 2023&ndash;Dez. 2024</li>
+      </ul>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Auszeichnungen</p>
-          <h2 class="section-title">Stipendien &amp; Förderungen</h2>
-        </div>
-        <div class="awards-grid stagger">
-          <div class="award-card">
-            <span class="award-year">2025 &ndash; 2028</span>
-            <h4>FRQSC-Stipendium</h4>
-            <p>Fonds de Recherche du Québec &mdash; Société et Culture</p>
-          </div>
-          <div class="award-card">
-            <span class="award-year">2024</span>
-            <h4>Mitacs Accelerate</h4>
-            <p>Forschungspraktikumsförderung für Industrie-Akademie-Zusammenarbeit</p>
-          </div>
-          <div class="award-card">
-            <span class="award-year">2023</span>
-            <h4>NSERC&ndash;CREATE Fin-ML</h4>
-            <p>Ausbildungsprogramm für finanzielles maschinelles Lernen</p>
-          </div>
-        </div>
-      </section>
-
+      <h2>Auszeichnungen</h2>
+      <ul>
+        <li>FRQSC-Stipendium, 2025&ndash;2028</li>
+        <li>Mitacs Accelerate, 2024</li>
+        <li>NSERC&ndash;CREATE Fin-ML, 2023</li>
+      </ul>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <div class="footer-brand">Rostand Tchouakam</div>
-          <p class="footer-desc">Doktorand der Volkswirtschaftslehre an der Université de Montréal. An der Schnittstelle von Finanzökonometrie und maschinellem Lernen.</p>
-        </div>
-        <div>
-          <p class="footer-heading">Kontakt</p>
-          <ul class="footer-links">
-            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
-            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Rostand Tchouakam. Alle Rechte vorbehalten.</span>
-        <span>Université de Montréal &middot; CIREQ</span>
-      </div>
+  <footer>
+    <div class="wrap">
+      <p>Rostand Tchouakam &mdash; <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
     </div>
   </footer>
-
-  <script>
-    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
-    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
-    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
-    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
-  </script>
 
 </body>
 </html>

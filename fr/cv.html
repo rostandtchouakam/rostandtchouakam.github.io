@@ -8,153 +8,66 @@
 </head>
 <body>
 
-  <nav class="site-nav" id="navbar">
-    <div class="container nav-inner">
+  <nav>
+    <div class="wrap nav-inner">
       <a href="index.html" class="nav-brand">Rostand Tchouakam</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-      <div class="nav-links" id="nav-links">
+      <div class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="cv.html" class="active">CV</a>
         <a href="papers.html">Publications</a>
         <a href="code.html">Code</a>
         <a href="teaching.html">Enseignement</a>
-        <span class="lang-switch">
-          <label for="lang-select">Langue</label>
-          <select id="lang-select" onchange="location.href=this.value;">
-            <option value="../en/cv.html">English</option>
-            <option value="../fr/cv.html" selected>Français</option>
-            <option value="../de/cv.html">Deutsch</option>
-          </select>
-        </span>
+        <select class="lang-select" onchange="location.href=this.value;">
+          <option value="../en/cv.html">EN</option>
+          <option value="../fr/cv.html" selected>FR</option>
+          <option value="../de/cv.html">DE</option>
+        </select>
       </div>
     </div>
   </nav>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Curriculum Vitae</h1>
-      <p class="page-hero-subtitle">Formation, expérience et distinctions</p>
-      <div class="gold-bar"></div>
-    </div>
-  </section>
-
   <main>
-    <div class="container">
+    <div class="wrap">
+      <div class="page-header">
+        <h1>Curriculum Vitae</h1>
+        <p>Télécharger le PDF complet : <a href="../assets/Rostand_CV.pdf" download>CV (PDF)</a></p>
+      </div>
 
-      <section class="section fade-in">
-        <a href="../assets/Rostand_CV.pdf" download class="download-btn">
-          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Télécharger le CV complet (PDF)
-        </a>
-      </section>
+      <hr>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Formation</p>
-          <h2 class="section-title">Parcours académique</h2>
-        </div>
-        <div class="timeline stagger">
-          <div class="timeline-item">
-            <span class="timeline-period">2022 &ndash; Présent</span>
-            <h3 class="timeline-title">Doctorant en économie</h3>
-            <p class="timeline-org">Université de Montréal (UdeM), Canada</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2018 &ndash; 2021</span>
-            <h3 class="timeline-title">Master en statistiques et économie (ISE)</h3>
-            <p class="timeline-org">Institut Sous-régional de Statistique et d'Économie Appliquée (ISSEA), Cameroun</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2017 &ndash; 2018</span>
-            <h3 class="timeline-title">Master 1 en mathématiques (Géométrie)</h3>
-            <p class="timeline-org">Université de Yaoundé I, Cameroun</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">2014 &ndash; 2017</span>
-            <h3 class="timeline-title">Licence en mathématiques</h3>
-            <p class="timeline-org">Université de Yaoundé I, Cameroun</p>
-          </div>
-        </div>
-      </section>
+      <h2>Formation</h2>
+      <ul>
+        <li><strong>Doctorant en économie</strong> &mdash; Université de Montréal (UdeM), Canada, 2022&ndash;</li>
+        <li><strong>Master en statistiques et économie (ISE)</strong> &mdash; Institut Sous-régional de Statistique et d'Économie Appliquée (ISSEA), Cameroun, 2018&ndash;2021</li>
+        <li><strong>Master 1 en mathématiques (Géométrie)</strong> &mdash; Université de Yaoundé I, Cameroun, 2017&ndash;2018</li>
+        <li><strong>Licence en mathématiques</strong> &mdash; Université de Yaoundé I, Cameroun, 2014&ndash;2017</li>
+      </ul>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Expérience</p>
-          <h2 class="section-title">Parcours professionnel</h2>
-        </div>
-        <div class="timeline stagger">
-          <div class="timeline-item">
-            <span class="timeline-period">Sept. 2021 &ndash; Présent</span>
-            <h3 class="timeline-title">Économiste (STC)</h3>
-            <p class="timeline-org">Groupe de la Banque mondiale</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-period">Août 2023 &ndash; Déc. 2024</span>
-            <h3 class="timeline-title">Stagiaire de recherche (PhD)</h3>
-            <p class="timeline-org">AI Innovation Centre, SKEMA Canada</p>
-          </div>
-        </div>
-      </section>
+      <h2>Expérience</h2>
+      <ul>
+        <li><strong>Économiste (STC)</strong>, Groupe de la Banque mondiale, sept. 2021 &ndash; présent</li>
+        <li><strong>Stagiaire de recherche (PhD)</strong>, AI Innovation Centre (SKEMA Canada), août 2023 &ndash; déc. 2024</li>
+      </ul>
 
-      <section class="section fade-in">
-        <div class="section-header">
-          <p class="section-label">Distinctions</p>
-          <h2 class="section-title">Bourses et subventions</h2>
-        </div>
-        <div class="awards-grid stagger">
-          <div class="award-card">
-            <span class="award-year">2025 &ndash; 2028</span>
-            <h4>Bourse FRQSC</h4>
-            <p>Fonds de Recherche du Québec &mdash; Société et Culture</p>
-          </div>
-          <div class="award-card">
-            <span class="award-year">2024</span>
-            <h4>Bourse Mitacs Accélération</h4>
-            <p>Financement de stage de recherche pour la collaboration industrie-université</p>
-          </div>
-          <div class="award-card">
-            <span class="award-year">2023</span>
-            <h4>Bourse CRSNG&ndash;CREATE Fin-ML</h4>
-            <p>Programme de formation en apprentissage automatique financier</p>
-          </div>
-        </div>
-      </section>
-
+      <h2>Distinctions</h2>
+      <ul>
+        <li>Bourse du Fonds de Recherche du Québec &mdash; Société et Culture (FRQSC), 2025&ndash;2028</li>
+        <li>Bourse Mitacs Accélération, 2024</li>
+        <li>Bourse de formation du CRSNG&ndash;CREATE Fin-ML, 2023</li>
+      </ul>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <div class="footer-brand">Rostand Tchouakam</div>
-          <p class="footer-desc">Doctorant en économie à l'Université de Montréal. À l'intersection de l'économétrie financière et de l'apprentissage automatique.</p>
-        </div>
-        <div>
-          <p class="footer-heading">Contact</p>
-          <ul class="footer-links">
-            <li><a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></li>
-            <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 Rostand Tchouakam. Tous droits réservés.</span>
-        <span>Université de Montréal &middot; CIREQ</span>
-      </div>
+  <footer>
+    <div class="wrap">
+      <p>Rostand Tchouakam &mdash; <a href="mailto:rostand.tchouakam.mbouendeu@umontreal.ca">rostand.tchouakam.mbouendeu@umontreal.ca</a></p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/rostand96" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/rostandtchouakam" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@EconometricaLearnia" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
     </div>
   </footer>
-
-  <script>
-    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
-    document.getElementById('nav-toggle').addEventListener('click', function() { document.getElementById('nav-links').classList.toggle('open'); });
-    document.querySelectorAll('.nav-links a').forEach(function(l) { l.addEventListener('click', function() { document.getElementById('nav-links').classList.remove('open'); }); });
-    var observer = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in, .stagger').forEach(function(el) { observer.observe(el); });
-  </script>
 
 </body>
 </html>
