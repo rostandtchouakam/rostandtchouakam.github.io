@@ -31,7 +31,7 @@ h3 { font-size: 1.05rem; }
 p { margin-bottom: 0.8em; }
 ul { padding-left: 1.3em; }
 li { margin-bottom: 0.4em; }
-hr { border: none; border-top: 1px solid var(--border); margin: 1.5em 0; }
+hr { display: none; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* Container */
@@ -39,7 +39,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Navigation */
 nav {
-  border-bottom: 1px solid var(--border);
   padding: 14px 0;
 }
 
@@ -118,8 +117,7 @@ main { padding: 0.5em 0 3em; }
 
 /* Footer */
 footer {
-  border-top: 1px solid var(--border);
-  padding: 1.5em 0 2em;
+  padding: 2.5em 0 2em;
   color: var(--text-light);
   font-size: 0.88rem;
 }
